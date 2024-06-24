@@ -25,6 +25,12 @@ public class SensorDataController {
         return ResponseEntity.ok(sensorDataService.getAll());
     }
 
+    @GetMapping("/{name}")
+    @ApiOperation("API get all sensor data by name")
+    public ResponseEntity<?> getAllByName(@PathVariable String name) {
+        return ResponseEntity.ok(sensorDataService.getAllByName(name));
+    }
+
     @PostMapping("")
     @ApiOperation("API create sensor data")
     public ResponseEntity<?> create(@RequestBody SensorDataEntity input) {
