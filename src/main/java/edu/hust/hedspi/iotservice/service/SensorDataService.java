@@ -1,7 +1,5 @@
 package edu.hust.hedspi.iotservice.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import edu.hust.hedspi.iotservice.entity.SensorDataEntity;
